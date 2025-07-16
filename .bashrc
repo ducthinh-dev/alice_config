@@ -1,3 +1,8 @@
+# Reset cursor to vertical bar when returning to shell (after tmux detach)
+if [[ $TERM != screen* ]]; then
+    PROMPT_COMMAND='echo -ne "\e[6 q"'
+fi
+
 # Auto-start or reattach tmux session on shell start
 if command -v tmux >/dev/null && [ -z "$TMUX" ]; then
     # If there is any existing session, attach to the first
