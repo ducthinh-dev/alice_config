@@ -1,5 +1,5 @@
 ### Introduction
-alice make everywhere the same way
+alice make everywhere the same way. Currently it only works for remote host and using root user only (may update to be usable for machine with GUI).
 
 ### Setup
 setup using `bash setup.sh`

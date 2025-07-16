@@ -6,7 +6,7 @@ apt update
 # NVIM
 # install nvim
 echo "\ninstalling & initializing neovim & neovim config"
-apt-get install neovim
+apt-get install neovim -y
 
 # init config file for nvim & source to .vimrc
 mkdir -p ~/.config/nvim
@@ -21,7 +21,7 @@ echo "source ${CURRENT_DIR}/.vimrc" > ~/.config/nvim/init.vim
 # TMUX
 # install tmux
 echo "\ninstalling & initializing tmux & tmux config"
-apt install tmux
+apt install tmux -y
 
 # backup .tmux.conf if file already exists
 if [ -f ~/.tmux.conf ]; then
