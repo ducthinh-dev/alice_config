@@ -1,10 +1,9 @@
-### bash
-- add source file to ~/.bashrc
+### Introduction
+alice make everywhere the same way
 
-### nvim
-- install nvim
-- create symlink to .vimrc
+### Setup
+setup using `bash setup.sh`
 
-### tmux
-- install tmux
-- create symlink to .tmux.conf
+### What will it do
+- install tmux & neovim
+- load default config for tmux, bash, & neovim
