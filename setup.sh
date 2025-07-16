@@ -6,7 +6,7 @@ apt update
 # NVIM
 # install nvim
 echo "\ninstalling & initializing neovim & neovim config"
-apt-get install nvim
+apt-get install neovim
 
 # init config file for nvim & source to .vimrc
 mkdir -p ~/.config/nvim
