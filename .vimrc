@@ -6,3 +6,4 @@ set expandtab
 set mouse=a
 set hlsearch
 set guicursor=a:ver25
+

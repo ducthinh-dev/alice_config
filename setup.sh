@@ -33,3 +33,9 @@ ln -s $CURRENT_DIR/.tmux.conf ~/.tmux.conf
 echo "\nsetting up alice bash"
 echo -e "\nif [ -f ~/alice_config/.bashrc ]; then\n    source ~/alice_config/.bashrc\nfi" >> ~/.bashrc
 
+# setup nvim packages folder
+echo "\nsetting up nvim package directory"
+mkdir -p $CURRENT_DIR/nvim/{lua,lua/lsp,plugin}
+touch $CURRENT_DIR/nvim/init.lua
+echo 'vim.cmd("source ${CURRENT_DIR}/.vimrc")' >> $CURRENT_DIR/nvim/.vim
+mkdir -p ~/.local/share/nvim/site/pack/mine/start

@@ -13,3 +13,9 @@ if command -v tmux >/dev/null && [ -z "$TMUX" ]; then
         tmux new-session -s default
     fi
 fi
+
+# phpactor
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+# nvim lua config
+export XDG_CONFIG_HOME=~/alice_config/nvim
