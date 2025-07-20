@@ -37,5 +37,15 @@ echo -e "\nif [ -f ~/alice_config/.bashrc ]; then\n    source ~/alice_config/.ba
 echo "\nsetting up nvim package directory"
 mkdir -p $CURRENT_DIR/nvim/{lua,lua/lsp,plugin}
 touch $CURRENT_DIR/nvim/init.lua
-echo 'vim.cmd("source ${CURRENT_DIR}/.vimrc")' >> $CURRENT_DIR/nvim/.vim
+echo 'vim.cmd("source ${CURRENT_DIR}/.vimrc")' >> $CURRENT_DIR/nvim/.vimrc
 mkdir -p ~/.local/share/nvim/site/pack/mine/start
+
+# setup vim-plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+echo "local Plug = vim.fn['plug#']
+vim.call('plug#begin')
+
+-- List of plugins go here
+
+
+vim.call('plug#end')" >> $CURRENT_DIR/nvim/.vimrc
