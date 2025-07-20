@@ -3,6 +3,9 @@ local Plug = vim.fn['plug#']
 
 vim.cmd("source /home/alice/alice_config/.vimrc")
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Start plug
 vim.call('plug#begin')
 
@@ -15,6 +18,8 @@ Plug 'hrsh7th/cmp-path'          -- Path completions
 Plug 'hrsh7th/cmp-cmdline'       -- Command line completions
 Plug 'L3MON4D3/LuaSnip'          -- Snippet engine
 Plug 'saadparwaiz1/cmp_luasnip'  -- Snippet completions
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-tree/nvim-web-devicons'
 
 
 vim.call('plug#end')
@@ -47,6 +52,9 @@ cmp.setup({
   })
 })
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+-- nvim-tree
+require("nvim-tree").setup()
 
 
 -- LSP Config
