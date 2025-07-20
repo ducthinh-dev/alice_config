@@ -18,4 +18,4 @@ fi
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # nvim lua config
-export XDG_CONFIG_HOME=~/alice_config/nvim
+export XDG_CONFIG_HOME=~/alice_config/
