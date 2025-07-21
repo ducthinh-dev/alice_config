@@ -1,7 +1,7 @@
 local vim = vim
 local Plug = vim.fn['plug#']
 
-vim.cmd("source /home/alice/alice_config/.vimrc")
+vim.cmd("source ~/alice_config/.vimrc")
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
